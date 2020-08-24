@@ -11,27 +11,35 @@ class Cell{
   
   void display(){
     if(this.walls[0]) {
-      stroke(255, 0, 0, 150);
+      stroke(255, 0, 0, 100);
+      strokeWeight(3);
     } else {
-      stroke(255, 100);
+      stroke(255, 10);
+      strokeWeight(1);
     }
     line(0, 0, this.board.cellSize, 0);
     if(this.walls[1]) {
-      stroke(255, 0, 0, 150);
+      stroke(255, 0, 0, 100);
+      strokeWeight(3);
     } else {
-      stroke(255, 100);
+      stroke(255, 10);
+      strokeWeight(1);
     }
     line(this.board.cellSize, 0, this.board.cellSize, this.board.cellSize);
     if(this.walls[2]) {
-      stroke(255, 0, 0, 150);
+      stroke(255, 0, 0, 100);
+      strokeWeight(3);
     } else {
-      stroke(255, 100);
+      stroke(255, 10);
+      strokeWeight(1);
     }
     line(this.board.cellSize, this.board.cellSize, 0, this.board.cellSize);
     if(this.walls[3]) {
-      stroke(255, 0, 0, 150);
+      stroke(255, 0, 0, 100);
+      strokeWeight(3);
     } else {
-      stroke(255, 100);
+      stroke(255, 10);
+      strokeWeight(1);
     }
     line(0, this.board.cellSize, 0, 0);
   }
